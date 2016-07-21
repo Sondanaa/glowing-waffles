@@ -3,14 +3,11 @@
 
 # #Basic filter transforms from Ivezic et all (2007)
 
-# In[4]:
 
 from __future__ import print_function, division
 
 from astropy.table import Table
 
-
-# In[7]:
 
 def filter_transform(mag_data, output_filter, R=None, B=None, 
                      V=None, I=None, g=None, r=None, i = None):
@@ -112,9 +109,5 @@ def filter_transform(mag_data, output_filter, R=None, B=None,
             raise KeyError('arguments r and g must be defined to transform to B filter')
     else:
         raise ValueError('the desired filter must be a string R B V or I')
-
-
-# In[ ]:
-
 
 
