@@ -79,7 +79,7 @@ class Star(object):
 
     @property
     def ra(self):
-        return self._table['RA'] / 24 * 360 * u.hourangle
+        return self._table['RA'] / 24 * 360 * u.deg
 
     @property
     def dec(self):
